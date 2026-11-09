@@ -1,0 +1,7 @@
+---
+description: Record development tasks in the daily Markdown worklog (DevWorklog)
+globs:
+alwaysApply: true
+---
+
+{{INSTRUCTION_BLOCK}}

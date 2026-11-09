@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://unpkg.com/devworklog/assets/spec/config.schema.json",
+  "title": "DevWorklog Configuration",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "timezone", "worklogDir", "language", "agents"],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "version": {
+      "type": "integer",
+      "const": 1,
+      "description": "Worklog specification version"
+    },
+    "timezone": {
+      "type": "string",
+      "minLength": 1,
+      "default": "Asia/Jakarta",
+      "description": "IANA timezone identifier (e.g. Asia/Jakarta, UTC)"
+    },
+    "worklogDir": {
+      "type": "string",
+      "minLength": 1,
+      "default": "developer-worklog",
+      "description": "Relative directory path where worklogs are stored"
+    },
+    "language": {
+      "type": "string",
+      "minLength": 2,
+      "default": "en",
+      "description": "BCP-47 language tag for free-text fields (structural labels remain English)"
+    },
+    "agents": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "claude-code",
+          "codex",
+          "cursor",
+          "copilot",
+          "gemini",
+          "opencode",
+          "deepseek"
+        ]
+      },
+      "uniqueItems": true,
+      "description": "Enabled AI coding agent adapters"
+    }
+  }
+}

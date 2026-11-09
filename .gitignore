@@ -1,0 +1,10 @@
+node_modules/
+dist/
+packages/cli/assets/
+packages/cli/README.md
+packages/cli/LICENSE
+coverage/
+*.tgz
+.DS_Store
+Thumbs.db
+/docs

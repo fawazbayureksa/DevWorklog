@@ -1,0 +1,45 @@
+{
+  "name": "devworklog",
+  "version": "0.1.0",
+  "description": "Open-source, AI-agent-friendly developer worklog system and CLI",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fawazbayureksa/DevWorklog.git",
+    "directory": "packages/cli"
+  },
+  "homepage": "https://github.com/fawazbayureksa/DevWorklog#readme",
+  "bugs": {
+    "url": "https://github.com/fawazbayureksa/DevWorklog/issues"
+  },
+  "type": "module",
+  "bin": {
+    "devworklog": "./dist/index.js"
+  },
+  "files": [
+    "dist/**/*.js",
+    "dist/**/*.d.ts",
+    "assets",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "prebuild": "node scripts/copy-assets.mjs",
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "lint": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=18.17.0"
+  },
+  "keywords": [
+    "worklog",
+    "ai-agent",
+    "developer-tools",
+    "markdown",
+    "claude-code",
+    "codex",
+    "cursor",
+    "copilot"
+  ]
+}

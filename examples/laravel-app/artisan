@@ -1,0 +1,4 @@
+#!/usr/bin/env php
+<?php
+// Stub artisan file for project detection / E2E tests
+echo "Laravel Framework Stub\n";

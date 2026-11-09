@@ -1,0 +1,49 @@
+{
+  "specVersion": 1,
+  "categories": [
+    "Feature Development",
+    "Bug Fixing",
+    "Refactoring",
+    "Maintenance",
+    "Technical Improvement"
+  ],
+  "statuses": [
+    "Completed",
+    "In Progress",
+    "Blocked"
+  ],
+  "months": [
+    "january",
+    "february",
+    "march",
+    "april",
+    "may",
+    "june",
+    "july",
+    "august",
+    "september",
+    "october",
+    "november",
+    "december"
+  ],
+  "recommendedScopes": [
+    "Backend",
+    "Frontend",
+    "Database",
+    "API",
+    "Infrastructure",
+    "CI/CD",
+    "Documentation",
+    "Testing",
+    "Full Stack"
+  ],
+  "agents": [
+    "claude-code",
+    "codex",
+    "cursor",
+    "copilot",
+    "gemini",
+    "opencode",
+    "deepseek"
+  ]
+}
